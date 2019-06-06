@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace HelpScout\Api\Conversations\Threads\Support;
 
 use HelpScout\Api\Customers\Customer;
+use HelpScout\Api\Customers\Entry\Email;
 use HelpScout\Api\Entity\Collection;
 
 trait HasCustomer
