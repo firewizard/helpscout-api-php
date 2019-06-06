@@ -31,7 +31,9 @@ trait HasCustomer
         // For a Conversation the API returns a single email address along
         // with a Customer.
         if (isset($data['email'])) {
-            $emails = new Collection([$data['email']]);
+            $emails = new Collection([
+                new Email(['value' => $data['email']])
+            ]);
             $customer->setEmails($emails);
             unset($data['email']);
         }
